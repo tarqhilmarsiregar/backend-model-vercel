@@ -11,5 +11,9 @@
             "dest": "api/index.js"
         }
     ],
-    "installCommand": "npm install --production"
+    "functions": {
+        "api/**": {
+            "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+        }
+    }
 }
